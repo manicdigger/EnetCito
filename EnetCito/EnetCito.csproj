@@ -59,7 +59,11 @@
   </Target>
   -->
   <PropertyGroup>
-    <PreBuildEvent>cd $(SolutionDir)
-cmd /c $(SolutionDir)\build.bat</PreBuildEvent>
+    <PreBuildEvent Condition=" ('$(OS)' == 'Windows_NT') ">cd $(SolutionDir)
+cmd /c "$(SolutionDir)\Build.bat"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">cd $(SolutionDir)
+sh ./Build.sh</PreBuildEvent>
   </PropertyGroup>
 </Project>
