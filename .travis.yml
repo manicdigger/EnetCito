@@ -1,0 +1,25 @@
+language: c
+
+install:
+ - sudo apt-get install mono-gmcs cli-common-dev > /dev/null
+
+script:
+ - xbuild /p:Configuration=Release
+
+# builds
+ - rm -rf out || exit 0;
+ - mkdir out;
+ - cd out
+ - git init
+ - git config user.name "Travis-CI"
+ - git config user.email "travis@example.com"
+ - cp -r ../Output ./Output
+ - git add .
+ - git commit -m "Deployed to Github Pages"
+ - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
+
+env:
+  global:
+  - GH_REF: github.com/manicdigger/EnetCito-builds
+  - secure: dYX37rEYHAPkOJDbTH8GXhRkmjxYjCLMa0jCkhDuHxpcqrleXNb6/yW9AOWrhCCs3+KKvQA11PQhoicuNG+9opKD59h6lG2S0jSZxsKPKfQYOZFrRvFwcTgHiBaqr8+XsWN6HKyGNx2AAT29rWrtzVoN4aHmNaNY5zRryxjEnsI=
+ 
