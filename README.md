@@ -4,6 +4,10 @@ EnetCito
 
 Port of Enet reliable UDP networking library for Java, C#, JavaScript, ActionScript, Perl and D using [Ć Programming Language](http://cito.sourceforge.net/).
 
+Download
+========
+https://github.com/manicdigger/EnetCito-builds
+
 Status
 ======
 Not yet usable.
