@@ -1,7 +1,7 @@
 EnetCito
 ========
 
-Port of Enet reliable UDP networking library for Java, C#, JavaScript, ActionScript, Perl and D using Cito.
+Port of Enet reliable UDP networking library for Java, C#, JavaScript, ActionScript, Perl and D using [Ć Programming Language](http://cito.sourceforge.net/).
 
 Status
 ======
