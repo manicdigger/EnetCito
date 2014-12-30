@@ -21,5 +21,5 @@ script:
 env:
   global:
   - GH_REF: github.com/manicdigger/EnetCito-builds
-  - secure: dYX37rEYHAPkOJDbTH8GXhRkmjxYjCLMa0jCkhDuHxpcqrleXNb6/yW9AOWrhCCs3+KKvQA11PQhoicuNG+9opKD59h6lG2S0jSZxsKPKfQYOZFrRvFwcTgHiBaqr8+XsWN6HKyGNx2AAT29rWrtzVoN4aHmNaNY5zRryxjEnsI=
+  - secure: "gmkmcWfyZ8Nssp2hJX+3nKkFS/WqeLO7yH7SLdkLezJU7vNoNhd31YbgL+1EEW6r9DLi/1TlX5/AeU3+dSoPF7F2ECD05dfIwX0PZv8Ic8BZ7Nsehkv77iRR+MLr9tN3UIrghq6ilhlLw+bkvmlzBJ8fjT6QyHeY2Worzdk0mJE="
  
