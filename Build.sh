@@ -1,16 +1,16 @@
 rm -rf Output
 
 mkdir Output
-mkdir Output\C
-mkdir Output\C99
-mkdir Output\Java
-mkdir Output\Cs
-mkdir Output\Js
-mkdir Output\JsTa
-mkdir Output\As
-mkdir Output\D
-mkdir Output\Pm
-mkdir Output\Pm510
+mkdir Output/C
+mkdir Output/C99
+mkdir Output/Java
+mkdir Output/Cs
+mkdir Output/Js
+mkdir Output/JsTa
+mkdir Output/As
+mkdir Output/D
+mkdir Output/Pm
+mkdir Output/Pm510
 
 mono cito.exe -D CITO -l c -o Output/C/EnetCito.cs EnetCito/Enet.ci.cs
 mono cito.exe -D CITO -l c99 -o Output/C99/EnetCito.cs EnetCito/Enet.ci.cs
