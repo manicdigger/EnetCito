@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/manicdigger/EnetCito.svg)](https://travis-ci.org/manicdigger/EnetCito)
 EnetCito
 ========
 
