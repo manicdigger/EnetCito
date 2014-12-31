@@ -6358,3 +6358,8 @@ public class ENetProtocol
 #endif
  byte[] data;
 }
+
+public class Test
+{
+    public void f() { }
+}
