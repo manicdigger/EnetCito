@@ -261,9 +261,9 @@ namespace EnetCito
             ENetSocketDotNet socket_ = (ENetSocketDotNet)socket;
         }
 
-        public override int ENET_HOST_TO_NET_16(int value)
+        public override ushort ENET_HOST_TO_NET_16(ushort value)
         {
-            return htons(value);
+            return (ushort)htons(value);
         }
 
         public override int ENET_HOST_TO_NET_32(int value)
@@ -271,9 +271,9 @@ namespace EnetCito
             return htonl(value);
         }
 
-        public override int ENET_NET_TO_HOST_16(int value)
+        public override ushort ENET_NET_TO_HOST_16(ushort value)
         {
-            return ntohs((ushort)value);
+            return ntohs(value);
         }
 
         public override int ENET_NET_TO_HOST_32(int value)
@@ -356,6 +356,11 @@ namespace EnetCito
             {
                 return -1;
             }
+        }
+
+        public override ushort IntToUshort(int p)
+        {
+            return (ushort)p;
         }
     }
 
